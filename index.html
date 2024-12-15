@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Brownstone Cafe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#" class="logo">Brownstone Cafe</a>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <ul id="nav-menu">
+            <li><a href="#who-we-are">About Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#featured-dishes">Featured</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    
+    
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Brownstone Cafe</h1>
+            <p>Your favorite place for comfort and dinning.</p>
+            <div class="hero-buttons">
+                <a href="#menu">Explore Menu</a>
+            </div>
+        </div>
+    </div>
+    
+    <section id="who-we-are" class="section-container">
+        <div class="section-circle">
+            <i class="fas fa-info-circle"></i> <!-- About icon -->
+        </div>
+        <section id="who-we-are" class="section-container">
+            <div class="container">
+                <h1 class="section-title">Welcome to Brownstone Cafe</h1>
+                <p class="section-description">
+                    Step into the delightful Brownstone Cafe in Middletown, Pennsylvania, where cozy charm meets a love for American cuisine, especially their famous breakfast and brunch delights.
+                </p>
+                
+                <h2 class="subsection-title">A Warm and Inviting Atmosphere</h2>
+                <p class="section-description">
+                    Upon entering Brownstone Cafe, you are greeted with a warm and cozy atmosphere that instantly makes you feel at home. The cafe offers key conveniences like reservations, takeout, and delivery, ensuring a seamless dining experience. With a variety of vegetarian options available, Brownstone Cafe ensures that all dietary preferences are catered to.
+                </p>
+                
+                <h2 class="subsection-title">Exceptional Service and Flavorful Dishes</h2>
+                <p class="section-description">
+                    One of the standout features of Brownstone Cafe is its attentive and friendly staff, as highlighted by satisfied customers who often rave about their experience. One diner remarked, "The staff here go above and beyond making sure every detail is perfect and always serving with a smile."
+                </p>
+                <p class="section-description">
+                    From their mouthwatering Balboa French Toast to the savory Reuben sandwich, each dish is crafted with care and bursting with flavor. Patio seating allows guests to enjoy their meal al fresco, surrounded by the serene charm of Middletown. This outdoor area provides a refreshing atmosphere, perfect for savoring a morning coffee or an evening meal under the stars, further enhancing the overall dining experience.
+                </p>
+                
+                <h2 class="subsection-title">A Must-Visit Destination</h2>
+                <p class="section-description">
+                    Whether you're stopping by for a quick breakfast or a leisurely lunch, Brownstone Cafe is the perfect destination. With a diverse menu featuring specialties like the Balboa French Toast, savory Reuben sandwich, and seasonal soups, exceptional service, and a cozy ambiance, this cafe is a must-visit for food enthusiasts in the Middletown area.
+                </p>
+                <p class="section-description">
+                    Don't miss out on the opportunity to savor the culinary delights that Brownstone Cafe has to offer.
+                </p>
+            </div>
+        </section>
+        
+        <p class="section-description">
+            With a dedication to quality, community, and sustainability, we ensure that every bite and sip tells a
+            story of care, flavor, and authenticity.
+        </p>
+    </section>
+    
+    <!-- Add separator here -->
+    <div class="section-separator"></div>
+    
+        
+      <section id="menu" class="section-container">
+        <div class="section-circle">
+            <i class="fas fa-book-open"></i> <!-- Menu Icon -->
+        </div>
+        <h2 class="section-title">MENU</h2>
+        <p class="section-description">
+            Explore our delicious selection of dishes tailored to satisfy every taste. Choose from breakfast favorites, hearty lunches, and decadent desserts. Enjoy the best we have to offer at Brownstone Cafe!
+        </p>
+        <div class="menu-buttons">
+            <button class="menu-btn" data-target="breakfast-section">Breakfast</button>
+            <button class="menu-btn" data-target="lunch-section">Lunch & Dinner</button>
+            <button class="menu-btn" data-target="sandwiches-section">Sandwiches & Wraps</button>
+            <button class="menu-btn" data-target="sides-section">Sides & Salads</button>
+            <button class="menu-btn" data-target="dessert-section">Dessert</button>
+        </div>
+        
+        <div id="breakfast-section" class="menu-section active">
+            <h2>Breakfast Menu</h2>
+            
+            <div class="menu-columns">
+                <!-- Column 1 -->
+                <div class="menu-column">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Eggs Benedict</span>
+                            <span class="menu-item-price">$7.99</span>
+                        </div>
+                        <div class="menu-item-description">Served with home-fries.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Brownstone Breakfast Sandwich</span>
+                            <span class="menu-item-price">$5.99</span>
+                        </div>
+                        <div class="menu-item-description">Two eggs, bacon, cheese, and tomato on an English muffin.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Breakfast Burrito</span>
+                            <span class="menu-item-price">$6.99</span>
+                        </div>
+                        <div class="menu-item-description">Eggs, scallions, bacon, tomatoes, monterrey jack cheese, jalapenos, and sour cream, wrapped in a soft tortilla with salsa and served with home-fries.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Sausage Gravy Over Biscuits</span>
+                            <span class="menu-item-price">$6.99</span>
+                        </div>
+                        <div class="menu-item-description">Served with home-fries.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Build Your Own Omelette</span>
+                            <span class="menu-item-price">$7.39</span>
+                        </div>
+                        <div class="menu-item-description">Served with home-fries and toast.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Baked Oatmeal</span>
+                            <span class="menu-item-price">$3.89</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Three Buttermilk Pancakes</span>
+                            <span class="menu-item-price">$5.29</span>
+                        </div>
+                        <div class="menu-item-description">With syrup and whipped butter.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Toast</span>
+                            <span class="menu-item-price">$1.49</span>
+                        </div>
+                        <div class="menu-item-description">Wheat, rye, or white.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Bagel with Cream Cheese</span>
+                            <span class="menu-item-price">$2.29</span>
+                        </div>
+                        <div class="menu-item-description">Plain or cinnamon raisin.</div>
+                    </div>
+                </div>
+        
+                <!-- Column 2 -->
+                <div class="menu-column">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Steak & Eggs (8 Ounces)</span>
+                            <span class="menu-item-price">$12.59</span>
+                        </div>
+                        <div class="menu-item-description">NY strip steak and 2 eggs, any style with home-fries and toast.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Hot Cakes & Eggs</span>
+                            <span class="menu-item-price">$5.79</span>
+                        </div>
+                        <div class="menu-item-description">Two eggs, any style, and 2 buttermilk pancakes.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Balboa French Toast</span>
+                            <span class="menu-item-price">$6.99</span>
+                        </div>
+                        <div class="menu-item-description">Cream cheese between 2 pieces of sourdough French toast served with fresh fruit cup.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Banana Stuffed French Toast</span>
+                            <span class="menu-item-price">$6.99</span>
+                        </div>
+                        <div class="menu-item-description">Sliced banana between 2 pieces of cornflakes-coated sourdough French toast with fresh fruit cup, syrup, and whipped butter.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Sourdough French Toast</span>
+                            <span class="menu-item-price">$4.59</span>
+                        </div>
+                        <div class="menu-item-description">With syrup and whipped butter.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Belgian Waffle</span>
+                            <span class="menu-item-price">$5.09</span>
+                        </div>
+                        <div class="menu-item-description">With syrup and whipped butter.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Puff Pastry Danish</span>
+                            <span class="menu-item-price">$4.59</span>
+                        </div>
+                        <div class="menu-item-description">With fresh custard and seasonal fruit.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Cinnamon Roll</span>
+                            <span class="menu-item-price">$3.49</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Bakery Muffins</span>
+                            <span class="menu-item-price">$2.79</span>
+                        </div>
+                        <div class="menu-item-description">Blueberry, cheese, bran, or corn.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Sticky Bun</span>
+                            <span class="menu-item-price">$4.59</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="lunch-section" class="menu-section">
+            <h2>Lunch & Dinner Menu</h2>
+            
+            <div class="menu-columns">
+                <!-- Column 1 -->
+                <div class="menu-column">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Honey-Dipped Chicken</span>
+                            <span class="menu-item-price">$12.99</span>
+                        </div>
+                        <div class="menu-item-description">4 pieces golden fried.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Pan Fried Tilapia</span>
+                            <span class="menu-item-price">$12.49</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Baked Chicken Pie</span>
+                            <span class="menu-item-price">$10.99</span>
+                        </div>
+                        <div class="menu-item-description">Individually baked with flaky crust.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Wisconsin Shepherd's Pie</span>
+                            <span class="menu-item-price">$9.99</span>
+                        </div>
+                        <div class="menu-item-description">Served with 1 side.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Kielbasa</span>
+                            <span class="menu-item-price">$9.99</span>
+                        </div>
+                        <div class="menu-item-description">With sautéed onions.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Grilled Pork Chops</span>
+                            <span class="menu-item-price">$11.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Grilled Ham Steak</span>
+                            <span class="menu-item-price">$10.99</span>
+                        </div>
+                        <div class="menu-item-description">With pineapple slice.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Grilled Marinated Chicken Breast</span>
+                            <span class="menu-item-price">$11.99</span>
+                        </div>
+                        <div class="menu-item-description">Served over Brownstone rice.</div>
+                    </div>
+                </div>
+        
+                <!-- Column 2 -->
+                <div class="menu-column">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Tender Roasted Turkey</span>
+                            <span class="menu-item-price">$10.99</span>
+                        </div>
+                        <div class="menu-item-description">Served over filling with gravy.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Turkey Croquettes</span>
+                            <span class="menu-item-price">$9.49</span>
+                        </div>
+                        <div class="menu-item-description">With filling and gravy.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Tender Beef Liver</span>
+                            <span class="menu-item-price">$9.49</span>
+                        </div>
+                        <div class="menu-item-description">Served with sautéed onions.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Steak Quesadillas</span>
+                            <span class="menu-item-price">$9.99</span>
+                        </div>
+                        <div class="menu-item-description">Grilled and monterey jack cheese, bacon, scallions, tomatoes and jalapeños served between 2 crisp tortillas.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Beef Burrito</span>
+                            <span class="menu-item-price">$8.99</span>
+                        </div>
+                        <div class="menu-item-description">Spicy, wrapped in a soft tortilla with lettuce, tomato, bacon, jalapeños, sour cream, and monterey jack cheese—served with rice.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Southwest Chicken</span>
+                            <span class="menu-item-price">$11.99</span>
+                        </div>
+                        <div class="menu-item-description">Grilled boneless breast topped with BBQ sauce, monterey jack cheese and tomatoes, served with Brownstone rice.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Chicken Burrito</span>
+                            <span class="menu-item-price">$8.99</span>
+                        </div>
+                        <div class="menu-item-description">Spicy, wrapped in a soft tortilla with lettuce, tomato, bacon, jalapeños, sour cream, and monterey jack cheese—served with rice.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Veal Parmesan</span>
+                            <span class="menu-item-price">$10.99</span>
+                        </div>
+                        <div class="menu-item-description">With linguine and garlic bread. Served with tossed salad and fresh dinner rolls.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Chicken Stir Fry</span>
+                            <span class="menu-item-price">$11.99</span>
+                        </div>
+                        <div class="menu-item-description">Over Brownstone rice.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="sandwiches-section" class="menu-section">
+            <h2>Sandwiches & Wraps Menu</h2>
+           
+            <div class="menu-columns">
+                <!-- Column 1 -->
+                <div class="menu-column">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Ciabatta Sandwich</span>
+                            <span class="menu-item-price">$6.99</span>
+                        </div>
+                        <div class="menu-item-description">Grilled chicken breast with Swiss cheese, topped with sautéed spinach, bacon, onions, and chipotle mayonnaise.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Focaccia Sandwiches with Veggie</span>
+                            <span class="menu-item-price">$6.99</span>
+                        </div>
+                        <div class="menu-item-description">Veggie sandwich: marinated eggplant, zucchini, onion, green peppers, and tomato with alfalfa sprouts and chipotle mayonnaise.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">California Cheeseburger Wrap</span>
+                            <span class="menu-item-price">$7.79</span>
+                        </div>
+                        <div class="menu-item-description">Lettuce, tomato, grilled onion, and mayonnaise wrapped in sun-dried tomato tortilla. Served with a cup of soup.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Crab Cake Sandwich</span>
+                            <span class="menu-item-price">$11.49</span>
+                        </div>
+                        <div class="menu-item-description">Fresh crab meat, broiled or fried, served on a grilled Kaiser roll with lettuce, tartar sauce, and coleslaw.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Cheese Steak Sandwich</span>
+                            <span class="menu-item-price">$6.59</span>
+                        </div>
+                        <div class="menu-item-description">Steak, grilled onions, lettuce, tomato, and chipotle mayonnaise on a Kaiser roll.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Hot Ham N' Cheese on Pretzel Bread</span>
+                            <span class="menu-item-price">$6.59</span>
+                        </div>
+                        <div class="menu-item-description">Smoked ham and Swiss cheese served on soft pretzel bread with lettuce, tomato, and our own special sauce.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Soup & Sandwich</span>
+                            <span class="menu-item-price">$7.79</span>
+                        </div>
+                        <div class="menu-item-description">Turkey, ham, or roast beef on grilled sourdough bread with lettuce and tomato, served with a cup of choice of soup.</div>
+                    </div>
+                </div>
+        
+                <!-- Column 2 -->
+                <div class="menu-column">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Focaccia Sandwiches with Cheese</span>
+                            <span class="menu-item-price">$6.99</span>
+                        </div>
+                        <div class="menu-item-description">Ham, provolone cheese, and tomato.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Chicken Sandwich</span>
+                            <span class="menu-item-price">$5.99</span>
+                        </div>
+                        <div class="menu-item-description">Grilled or blackened chicken breast served on grilled sourdough bread with lettuce and tomato.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Cheese Burger Sub</span>
+                            <span class="menu-item-price">$6.49</span>
+                        </div>
+                        <div class="menu-item-description">Lean ground beef, tomatoes, lettuce, mayonnaise, and cheese on a fresh Italian roll.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Rachel</span>
+                            <span class="menu-item-price">$7.79</span>
+                        </div>
+                        <div class="menu-item-description">Fresh turkey, Swiss cheese, sauerkraut, and special sauce on grilled rye bread.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Reuben</span>
+                            <span class="menu-item-price">$7.79</span>
+                        </div>
+                        <div class="menu-item-description">Corn beef, Swiss cheese, sauerkraut, and special sauce on grilled rye bread.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">BLT</span>
+                            <span class="menu-item-price">$5.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Grilled Cheese</span>
+                            <span class="menu-item-price">$3.49</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sides-section" class="menu-section">
+            <h2>Sides & Salads Menu</h2>
+           
+            <div class="menu-columns">
+                <!-- Column 1 -->
+                <div class="menu-column">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Cottage Cheese</span>
+                            <span class="menu-item-price">$1.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Pepper Slaw</span>
+                            <span class="menu-item-price">$1.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Roasted Garlic Mashed Potatoes</span>
+                            <span class="menu-item-price">$1.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Fresh Mashed Potatoes</span>
+                            <span class="menu-item-price">$1.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Cole Slaw</span>
+                            <span class="menu-item-price">$1.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Onion Rings</span>
+                            <span class="menu-item-price">$1.00</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Tossed Salad</span>
+                            <span class="menu-item-price">$1.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Bread Filling</span>
+                            <span class="menu-item-price">$1.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Lettuce with Bacon Dressing</span>
+                            <span class="menu-item-price">$1.99</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Column 2 -->
+                <div class="menu-column">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Apple Sauce</span>
+                            <span class="menu-item-price">$1.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">French Fries</span>
+                            <span class="menu-item-price">$1.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Chef Salad</span>
+                            <span class="menu-item-price">$8.99</span>
+                        </div>
+                        <div class="menu-item-description">Fresh tossed salad greens, turkey, ham, cheese, hard-boiled egg, and tomato with your choice of dressing.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Caesar Salad</span>
+                            <span class="menu-item-price">$6.99</span>
+                        </div>
+                        <div class="menu-item-description">Romaine lettuce tossed with croutons, Romano cheese, and caesar dressing.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">House Salad</span>
+                            <span class="menu-item-price">$4.99</span>
+                        </div>
+                        <div class="menu-item-description">Fresh tossed salad greens, carrots, tomato, cucumber, croutons, and onions with your choice of dressing.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Greek Salad</span>
+                            <span class="menu-item-price">$8.49</span>
+                        </div>
+                        <div class="menu-item-description">Fresh tossed salad greens, feta cheese, onion, tomato, carrots, black olives served with balsamic vinaigrette dressing.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Soup & Salad</span>
+                            <span class="menu-item-price">$6.99</span>
+                        </div>
+                        <div class="menu-item-description">Our house salad served with a crock of your choice of soup.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Blackened Chicken Salad</span>
+                            <span class="menu-item-price">$8.99</span>
+                        </div>
+                        <div class="menu-item-description">Spicy blackened chicken served on a bed of romaine lettuce with croutons, tomatoes, and honey mustard dressing.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Brownstone Summer Salad with Grilled Chicken</span>
+                            <span class="menu-item-price">$8.99</span>
+                        </div>
+                        <div class="menu-item-description">Romaine lettuce, feta cheese, pearls, and fresh strawberries with balsamic vinaigrette.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="dessert-section" class="menu-section">
+            <h2>Dessert Menu</h2>
+            
+            <div class="menu-columns">
+                <!-- Column 1 -->
+                <div class="menu-column">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Homemade Cheesecake</span>
+                            <span class="menu-item-price">$3.19</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Triple Chocolate Cake</span>
+                            <span class="menu-item-price">$3.19</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Homemade Carrot Cake</span>
+                            <span class="menu-item-price">$3.49</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Strawberry Sundae</span>
+                            <span class="menu-item-price">$3.49</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Rice Pudding</span>
+                            <span class="menu-item-price">$1.99</span>
+                        </div>
+                        <div class="menu-item-description">With cinnamon and whipped cream.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Strawberry Pie (in Season)</span>
+                            <span class="menu-item-price">$3.49</span>
+                        </div>
+                        <div class="menu-item-description">With bananas.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Southern Pecan Pie</span>
+                            <span class="menu-item-price">$3.49</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Column 2 -->
+                <div class="menu-column">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Ice Cream</span>
+                            <span class="menu-item-price">$1.99</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Fruit Pies</span>
+                            <span class="menu-item-price">$2.99</span>
+                        </div>
+                        <div class="menu-item-description">Blueberry crumb, cherry crumb, peach, apple, lemon meringue, or no sugar added fruit pie.</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Brownstone Cheesecake</span>
+                            <span class="menu-item-price">$4.19</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Cream Pie</span>
+                            <span class="menu-item-price">$3.19</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Hot Fudge Sundae</span>
+                            <span class="menu-item-price">$3.49</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Chocolate Sundae</span>
+                            <span class="menu-item-price">$3.49</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+     <!-- Add separator -->
+     <div class="section-separator"></div>
+
+     <section id="featured-dishes">
+        <div id="featured-dishes-header">
+            <div class="section-circle">
+                <i class="fas fa-utensils"></i> <!-- Menu icon -->
+            </div>
+            <h2 id="featured-dishes-title">Featured Dishes</h2>
+            <p id="featured-dishes-subtext">Take a look at some of our most popular and delicious dishes that keep our customers coming back for more!</p>
+        </div>
+
+    
+        <!-- Veal Parmesan -->
+        <div class="featured-dish">
+            <img src="images/Veal Parmesan.png" alt="Veal Parmesan">
+            <h3 class="featured-dish-name">Veal Parmesan</h3>
+            <p>Breaded veal topped with marinara sauce and melted mozzarella cheese, served with spaghetti.</p>
+        </div>
+    
+        <!-- Chicken Burrito -->
+        <div class="featured-dish">
+            <img src="images/chicken_burrito.png" alt="Chicken Burrito">
+            <h3 class="featured-dish-name">Chicken Burrito</h3>
+            <p>A delightful mix of chicken, rice, beans, and spices wrapped in a soft tortilla.</p>
+        </div>
+    
+        <!-- Beef Burrito -->
+        <div class="featured-dish">
+            <img src="images/beef_burrito.png" alt="Beef Burrito">
+            <h3 class="featured-dish-name">Beef Burrito</h3>
+            <p>Juicy beef with rice, beans, and vegetables, seasoned to perfection, wrapped in a warm tortilla.</p>
+        </div>
+    
+        <!-- Steak Quesadillas -->
+        <div class="featured-dish">
+            <img src="images/steak_quesadillas.png" alt="Steak Quesadillas">
+            <h3 class="featured-dish-name">Steak Quesadillas</h3>
+            <p>Grilled steak and melted cheese sandwiched in crispy tortillas, served with salsa and lime.</p>
+        </div>
+    </section>
+    
+
+
+    
+    
+    <!-- Add separator -->
+    <div class="section-separator"></div>
+    
+    <section id="contact" class="section-container">
+    <div class="section-circle">
+        <i class="fas fa-map-marker-alt"></i>
+    </div>
+    <h2 class="section-title">Contact Us</h2>
+    <p>We'd love to hear from you! Reach out to us using the information below.</p>
+
+    <div class="contact-container">
+        <!-- Address Card -->
+        <div class="contact-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Address</h3>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=1+N+Union+St,+Middletown,+PA+17057" 
+           target="_blank" 
+           style="color: #6d776c; text-decoration: none;">
+            The Brownstone Cafe<br>
+            1 N Union St, Middletown, PA 17057
+        </a>
+        </div>
+
+        <!-- Phone Card -->
+        <div class="contact-card">
+            <i class="fas fa-phone-alt"></i>
+            <h3>Phone</h3>
+            <a href="tel:+17179443301" style="color: #6d776c; text-decoration: none;">
+                (717) 944-3301
+            </a>
+        </div>
+
+        <!-- Facebook Card -->
+        <div class="contact-card">
+            <i class="fab fa-facebook"></i>
+            <h3>Facebook</h3>
+            <p>
+                <a href="https://www.facebook.com/Brownstonecafe.Middletown" target="_blank" rel="noopener noreferrer" style="color: #6d776c; text-decoration: none;">
+                    Visit our Facebook Page
+                </a>
+            </p>
+        </div>
+
+                <!-- Hours of Operation Card -->
+        <div class="contact-card hours-card">
+            <i class="fas fa-clock"></i>
+            <h3>Hours of Operation</h3>
+            <p>
+                <strong>Monday:</strong> 7:00 AM – 8:00 PM<br>
+                <strong>Tuesday:</strong> Closed<br>
+                <strong>Wednesday:</strong> 7:00 AM – 8:00 PM<br>
+                <strong>Thursday:</strong> 7:00 AM – 8:00 PM<br>
+                <strong>Friday:</strong> 7:00 AM – 8:00 PM<br>
+                <strong>Saturday:</strong> 7:00 AM – 8:00 PM<br>
+                <strong>Sunday:</strong> 8:00 AM – 8:00 PM
+            </p>
+        </div>
+
+    </div>
+</section>
+
+    
+    
+
+    <!-- Footer -->
+<footer>
+    <p>Brownstone Cafe Middletown. All rights reserved.</p>
+</footer>
+
+    
+    <script src="javascript/script.js" defer></script>
+
+</body>
+</html>

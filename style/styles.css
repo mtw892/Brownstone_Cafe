@@ -1,0 +1,920 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f4f2ec;
+    color: #333;
+}
+
+/* === Header Styling === */
+header, footer {
+    background-color: #e8ddbf; /* Beige color */
+    padding: 5px 20px;
+    height: auto;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sticky Navbar for All Screen Sizes */
+nav {
+    position: fixed; /* Sticks the navbar to the top of the screen */
+    top: 0; /* Align to the top of the viewport */
+    left: 0; /* Align to the left edge */
+    width: 100%; /* Full-width navbar */
+    z-index: 1000; /* Keeps navbar above other content */
+    background-color: rgba(109, 119, 108, 0.95); /* Semi-transparent background */
+    padding: 10px 20px; /* Spacing for navbar content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+    display: flex;
+    justify-content: space-between; /* Align logo and links */
+    align-items: center; /* Center navbar items vertically */
+}
+
+/* Ensure Navigation Links are Visible on Desktop */
+@media screen and (min-width: 769px) {
+    nav ul {
+        display: flex; /* Ensure menu items are visible */
+        flex-direction: row; /* Horizontal layout for desktop */
+        position: static; /* Reset position for links */
+        background: none; /* Remove background color */
+        padding: 0; /* Reset padding for desktop view */
+    }
+
+    .hamburger {
+        display: none; /* Hide hamburger menu on desktop */
+    }
+}
+
+
+
+    .hamburger {
+        display: block; /* Show hamburger menu for mobile */
+        font-size: 2rem;
+        color: #f4e7d4; /* Match the theme color */
+        cursor: pointer;
+    }
+
+
+
+/* Navigation Logo */
+nav .logo {
+    font-family: 'Georgia', serif; /* Elegant serif font */
+    font-size: 1.8rem;
+    color: #f4e7d4; /* Soft tan matching your footer */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* Space between menu items */
+    margin: 0;
+    padding: 0;
+}
+
+/* Adjust navigation links for desktop only */
+@media screen and (min-width: 769px) {
+    nav ul {
+        display: flex;
+        justify-content: center; /* Keep links centered */
+        gap: 20px; /* Space between links */
+        margin-left: -110px; /* Shift links slightly to the left */
+        list-style: none;
+        padding: 0;
+    }
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #f4e7d4; /* Soft tan for menu links */
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: color 0.3s, background-color 0.3s; /* Smooth hover effect */
+    border-radius: 4px;
+}
+
+/* Hover Effects for Links */
+nav ul li a:hover {
+    color: #cfc4af;; /* Darker text on hover */
+    cursor: pointer;
+}
+
+
+
+
+/* Hide the menu by default */
+nav ul {
+    display: none; /* Hide the menu initially */
+    flex-direction: column;
+    position: absolute;
+    top: 80px; /* Below the navigation bar */
+    left: 0;
+    width: 100%;
+    justify-content: center; /* Center-align the links */
+    background-color: rgba(109, 119, 108, 0.95);
+    text-align: center;
+    padding: 20px 0;
+    z-index: 999; /* Ensure the menu stays on top */
+}
+
+/* Show the menu when 'active' class is toggled */
+nav ul.active {
+    display: flex !important; /* Force the display to override other styles */
+}
+
+.hamburger {
+    display: none; /* Default hidden on larger screens */
+    font-size: 2rem;
+    color: #f4e7d4; /* Match theme color */
+    cursor: pointer;
+}
+
+/* Make the hamburger visible on mobile */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Ensure the menu is visible on desktop */
+@media screen and (min-width: 769px) {
+    nav ul {
+        display: flex !important; /* Show menu as a flex container */
+        flex-direction: row; /* Align menu items horizontally */
+        position: static; /* Reset position to default */
+        background: none; /* Remove background */
+        padding: 0; /* Reset padding */
+    }
+
+    .hamburger {
+        display: none; /* Hide hamburger menu on desktop */
+    }
+}
+
+/* Logo Styling */
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Resize the logo */
+.logo img {
+    width: 160px;  /* Adjust width as needed */
+    height: auto;  /* Maintains aspect ratio */
+}
+/* Adjust logo position for desktop */
+@media screen and (min-width: 769px) {
+    nav .logo {
+        margin-left: 20px; /* Move logo to the right */
+    }
+}
+
+/* Centered Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.nav-links a {
+    color: #0a0a0a;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* Style for navigation links */
+.navbar a {
+    color: #2b2b2b; /* Default link color */
+    text-decoration: none;
+    padding: 0 15px;
+    transition: color 0.3s, border-bottom 0.3s; /* Smooth transition */
+}
+
+/* Hover effect for navigation links */
+.navbar a:hover {
+    color: #8e9678; /* Change color on hover */
+}
+
+
+/* Hover effect for Order Now button */
+.navbar .order-button:hover {
+    background: linear-gradient(90deg, #495057, #6c757d); /* Reverse gradient */
+    transform: scale(1.05); /* Slightly enlarge button */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+
+    .hero {
+        background-image: url('../images/brownstone_building.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        padding: 100px 20px 20px; /* Add padding-top to push content below navbar */
+        box-sizing: border-box;
+}
+/* Fix for Desktop Navigation Overlap */
+@media (min-width: 769px) {
+    .hero {
+        padding-top: 120px; /* Adjusts space below the navigation bar */
+    }
+
+    nav {
+        position: relative; /* Removes fixed positioning on desktop */
+    }
+}
+/* Responsive Fix for Mobile View */
+@media (max-width: 768px) {
+    nav {
+        position: relative; /* Change to relative on mobile to avoid overlap */
+    }
+
+    .hero {
+        padding-top: 60px; /* Adjust padding for mobile */
+    }
+}
+.hero-content {
+    /* Centering text and buttons */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 3rem; /* Adjust for desired size */
+    font-weight: bold;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5rem; /* Adjust for subtitle size */
+    margin: 10px 0 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.hero-buttons a {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.hero-buttons a:hover {
+    background-color: #ddd; /* Hover effect */
+}
+
+/* Updated CSS for the Who We Are section to ensure left alignment of text */
+#who-we-are {
+    text-align: left; /* Align all content to the left */
+    padding: 50px 20px;
+    font-family: 'Georgia', serif; /* Maintain elegant font style */
+    color: #fffefe; /* Text color */
+}
+
+/* Ensure paragraphs in the Who We Are section are left-aligned */
+#who-we-are .section-description {
+    text-align: left !important; /* Force left alignment for paragraphs */
+    font-size: 1.125rem; /* Improve readability */
+    line-height: 1.6; /* Add spacing for clarity */
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+
+/* General Container Styling for Sections */
+.section-container {
+    background-color: #6d776c; /* Matches the green theme */
+    padding: 50px 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-circle {
+    background-color: #d9a76c;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px !important; /* Force a smaller space below the icon */
+    margin: 0 auto 20px;
+    position: relative;
+}
+
+/* Section Title */
+.section-title {
+    text-align: center;
+    font-size: 2.5rem; /* Main title size */
+    font-weight: bold; /* Bold title */
+    color: #ffffff; /* Title highlight color */
+    margin-top: 0 !important; /* Remove any unnecessary top margin */
+    margin-bottom: 10px !important; /* Adjust bottom spacing */
+}
+
+
+/* Subsection Titles */
+.subsection-title {
+    font-size: 1.8rem; /* Subtitle size */
+    font-weight: bold; /* Bold subtitle */
+    color: #ffffff; /* Keep white text */
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+.section-description {
+    font-size: 1.2rem; /* Paragraph size */
+    line-height: 1.6; /* Line spacing for readability */
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+/* Filter Buttons Styling */
+.menu-btn {
+    margin-top: 30px; /* Add spacing above each box */
+    font-family: 'Georgia', serif;
+    font-size: 1rem; /* Adjust size for better readability */
+    font-weight: bold;
+    color: #ffffff; /* Your theme's color for text */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #5a8d68; /* Outline with theme color */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    padding: 10px 20px; /* Spacing inside the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease-in-out; /* Smooth transitions */
+}
+
+.menu-btn:hover {
+    background-color: #5a8d68; /* Filled background on hover */
+    color: #fff; /* White text on hover */
+    border-color: #5a8d68; /* Ensure border matches hover background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+}
+
+.menu-btn:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px 2px rgba(90, 141, 104, 0.7); /* Add focus effect */
+}
+
+.menu-btn.active {
+    background-color: #5a8d68; /* Filled background for active state */
+    color: #fff; /* White text for active state */
+    border-color: #5a8d68;
+}
+/* Add spacing above the menu boxes */
+.menu-box {
+    margin-top: 30px; /* Add spacing above each box */
+}
+.menu-section {
+    display: none; /* Hide all sections by default */
+}
+
+.menu-section.active {
+    display: block; /* Show only the active section */
+}
+
+/* General styling for all menu sections */
+.menu-section {
+    font-family: 'Georgia', serif; /* Change to your desired font */
+    color: #ffffff; /* Change to your desired font color */
+    margin: 20px 0;
+    padding: 20px;
+}
+
+/* Styling for section titles */
+.menu-section h2 {
+    font-family: 'Georgia', serif; /* Change the title font */
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff; /* Match your theme's title color */
+    text-align: center;
+    margin-bottom: 10px;
+}
+#menu p {
+    color: #ffffff; /* Change to your desired font color */
+    text-align: left; /* Align the paragraph text to the left */
+    margin: 0 auto; /* Center the paragraph block horizontally */
+    max-width: 1300px; /* Limit the width for better readability */
+    line-height: 1.6; /* Improve line spacing */
+}
+@media (max-width: 768px) {
+    #menu p {
+        text-align: left; /* Center-align text for mobile view */
+        padding: 0 15px; /* Add some horizontal padding for smaller screens */
+    }
+
+    #menu .menu-box p {
+        text-align: center; /* Center-align text in styled boxes */
+    }
+}
+
+/* Styling for section descriptions (optional) */
+.menu-section p {
+    font-family: 'Georgia', serif; /* Match the main font */
+    font-size: 1rem;
+    color: #333; /* Subtle text color for descriptions */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Styling for menu item names */
+.menu-item-name {
+    font-family: 'Georgia', serif; /* Match the main font */
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333; /* Darker font for item names */
+}
+
+/* Styling for menu item descriptions */
+.menu-item-description {
+    font-family: 'Georgia', serif;
+    text-align: left;
+    color: #ffffff;
+    font-size: 1.0rem;
+    margin-top: 5px;
+}
+
+/* Styling for the menu item header with dotted lines */
+.menu-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.menu-item-name {
+    flex: 1; /* Ensures names take available space */
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    position: relative;
+}
+
+.menu-item-description {
+    font-family: 'Georgia', serif;/* Use a readable font */
+    font-size: 0.9rem; /* Ensure text size is appropriate */
+    color: #333; /* Change this to your desired color, e.g., #333 for dark gray or #5a8d68 for theme green */
+    margin-top: 5px; /* Add some spacing above the description */
+    text-align: left; /* Keep descriptions aligned properly */
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+
+
+/* Styling for menu item prices */
+.menu-item-price {
+    font-family: 'Georgia', serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #81b890; /* Use a unique color for prices */
+    text-align: right;
+}
+
+/* Only display the active section */
+.menu-section.active {
+    display: block;
+}
+
+.menu-columns {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.menu-column {
+    flex: 1;
+}
+
+.menu-item {
+    margin-bottom: 15px;
+}
+
+.menu-item-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.menu-item-name {
+    text-align: left;
+}
+
+/* Featured Dishes Section */
+
+/* Center the title and subtext */
+#featured-dishes-title {
+    font-family: 'Georgia', serif; /* Elegant font */
+    text-align: center; /* Center-align text */
+    font-size: 2.5rem; /* Adjust title font size */
+    font-weight: bold;
+    color: #ffffff; /* Title color */
+    margin-bottom: 10px; /* Add spacing below the title */
+}
+
+#featured-dishes-subtext {
+    text-align: center; /* Center-align text */
+    font-size: 1.2rem; /* Adjust subtext font size */
+    color: #ffffff; /* Subtext color */
+    margin-bottom: 20px; /* Add spacing below the subtext */
+}
+
+
+/* Center and Align the Featured Dishes Section */
+#featured-dishes {
+    display: flex; /* Enable Flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping to the next row */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Add spacing between items */
+    margin: 0 auto; /* Center the section itself */
+    max-width: 1200px; /* Limit the section width */
+    padding: 20px; /* Add padding for spacing */
+}
+
+/* Style Individual Dish Cards */
+.featured-dish {
+    flex: 0 1 calc(25% - 40px); /* Four items per row on larger screens */
+    background-color: #6d776c; /* Card background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 15px; /* Space inside the card */
+    text-align: center; /* Center text inside */
+    max-width: 300px; /* Restrict the card width */
+}
+
+/* Responsive Image Sizing */
+.featured-dish img {
+    width: 100%; /* Make the image scale to fit its container */
+    height: 200px; /* Set a consistent height */
+    object-fit: cover; /* Crop the image to fit while maintaining aspect ratio */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+/* Contact Section Styling */
+#contact {
+    text-align: center; /* Center-align all text */
+    padding: 50px 20px; /* Spacing around the section */
+    background-color: #6d776c; /* Soft green background */
+    color: #fff; /* White text for contrast */
+    font-family: 'Georgia', serif;
+}
+/* Center the text below the Contact Us title */
+#contact p {
+    font-size: 1.2rem;
+    text-align: center; /* Center-align the paragraph text */
+    margin: 0 auto; /* Ensures it stays centered */
+    max-width: 800px; /* Optional: Limits the width for better readability */
+    line-height: 1.6; /* Improve spacing between lines */
+}
+
+/* Section Title Styling */
+#contact .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff; /* Golden accent for elegance */
+}
+
+/* Contact Information Container */
+.contact-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center;
+    gap: 30px; /* Space between cards */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    margin-top: 30px;
+}
+
+/* Contact Cards */
+.contact-card {
+    background-color: #ffffff; /* White background for cards */
+    color: #333333; /* Dark text for readability */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    width: 280px; /* Set card width */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Contact Icons */
+.contact-card i {
+    font-size: 2rem;
+    color: #d9a76c; /* Golden icons for elegance */
+    margin-bottom: 10px;
+}
+
+/* Card Titles */
+.contact-card h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #6d776c; /* Green accent for headers */
+}
+
+/* Specific styling for Contact Cards' text */
+#contact .contact-card p {
+    color: #333333 !important; /* Override any global styles */
+    text-align: center;
+    font-size: 1rem; /* Ensure readability */
+    line-height: 1.6;
+}
+
+/* Align Hours of Operation text to the left */
+#contact .contact-card.hours-card p {
+    text-align: left;
+    margin: 0 auto; /* Keep content centered within the card */
+    line-height: 1.6; /* Improve spacing between lines */
+}
+
+
+
+
+
+
+/* Responsive Adjustments for Mobile */
+@media (max-width: 768px) {
+    #featured-dishes {
+        flex-direction: column; /* Stack items vertically */
+        gap: 15px; /* Reduce spacing */
+        align-items: center; /* Center-align all items */
+    }
+
+    .featured-dish {
+        flex: 0 1 100%; /* Full width for each item */
+        max-width: 400px; /* Restrict the maximum width */
+    }
+}
+
+
+
+/* Update styles for dish titles */
+.featured-dish-name {
+    font-size: 1.8rem; /* Increase font size */
+    font-family: 'Georgia', serif; /* Elegant font */
+    color: #ffffff; /* Theme green color */
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0; /* Add space around the title */
+}
+
+/* Update styles for dish descriptions */
+.featured-dish p {
+    font-size: 1.2rem; /* Adjust font size */
+    font-family: 'Georgia', serif; /* Match font style with titles */
+    color: #333; /* Dark gray for readability */
+    line-height: 1.6; /* Improve spacing for readability */
+    font-weight: bold;
+    text-align: left; /* Center-align text */
+    margin: 10px 0; /* Add spacing around the description */
+}
+
+
+/* General section container styling */
+.section-container {
+    padding: 50px 0px; /* Adjust padding as needed */
+    margin: 0; /* Remove default margins */
+}
+
+/* Separator styling */
+.section-separator {
+    margin: 0; /* Remove extra space around the separator */
+    padding: 0; /* Ensure no padding is added */
+    border: none;
+    border-top: 3px solid #d4a373; /* Separator color and style */
+    width: 100%; /* Adjust width to fit the design */
+    margin: 0 auto; /* Center align the separator */
+}
+
+/* Specific adjustments for individual sections */
+#who-we-are {
+    margin-bottom: 0; /* Remove space below this section */
+}
+
+#menu {
+    margin-top: 0; /* Remove space above this section */
+}
+
+
+.item-name {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.item-dots {
+    flex: 1;
+    border-bottom: 1px dashed #ffffff;
+    margin: 0 10px;
+}
+
+.item-detail {
+    font-size: 0.9em;
+    color: #ffffff;
+}
+/* Adjustments for mobile view */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Adjust spacing for stacked layout */
+    }
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 80px 10px; /* Reduce padding on smaller screens */
+    }
+    
+    .hero-section h1 {
+        font-size: 2em;
+    }
+
+    .hero-section p {
+        font-size: 1em;
+        margin-bottom: 40px; /* Adjust space between subheading and buttons */
+    }
+
+    .hero-section .button-container {
+        flex-direction: column; /* Stack buttons vertically on mobile */
+        gap: 15px; /* Adjust space between stacked buttons */
+    }
+}
+
+/* === Main Content Styling === */
+.main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
+.main-content h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Individual section items */
+.section-item {
+    max-width: 300px;
+    padding: 20px 0; /* Optional: Adds internal padding to each item */
+    text-align: center;
+}
+
+/* Circle styles remain the same */
+.circle {
+    width: 60px;
+    height: 60px;
+    background-color: #d89e56;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+}
+
+.about-section {
+    background-color: #7a8678; /* Choose a green shade */
+    color: #fff; /* Ensure text is readable on green background */
+    padding: 300px; /* Adds some spacing around the content */
+}
+
+
+
+footer {
+    background-color: rgba(73, 82, 71, 0.95); /* Semi-transparent background */
+    color: #000 !important; /* Ensure dark text overrides any conflicts */
+    text-align: center !important; /* Force text to be centered */
+    padding: 15px 0; /* Add spacing inside the footer */
+    position: absolute; /* Stick footer to the bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    font-size: 1rem; /* Font size */
+    font-weight: bold; /* Bold font */
+    z-index: 10; /* Ensure footer is above other elements */
+}
+
+footer p, footer a {
+    color:  #f4e7d4 !important; /* Force text to be dark */
+    text-decoration: none; /* Optional: Remove underlines on links */
+    text-align: center !important; /* Force text to be centered */
+}
+
+
+
+
+/* === Responsive Adjustments === */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        height: 60vh;
+    }
+
+    .green-section {
+        padding-top: 40px;
+    }
+
+    .section-item {
+        margin-bottom: 40px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+}
+/* Optional: Mobile adjustments for readability */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 20px;
+    }
+}
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .footer .footer-section {
+        margin: 20px 0;
+    }
+
+    .footer h3 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    .footer p, .footer a {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+}
+
+/* Adjustments for mobile view */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Adjust spacing for stacked layout */
+    }
+}
+/* Adjustments for mobile */
+@media (max-width: 768px) {
+    .who-we-are {
+        padding: 30px 10px; /* Reduce padding on smaller screens */
+    }
+
+    .who-we-are h2 {
+        font-size: 1.75rem; /* Slightly smaller heading on mobile */
+    }
+
+    .who-we-are p {
+        font-size: 1rem; /* Slightly smaller paragraph text for smaller screens */
+    }
+}
